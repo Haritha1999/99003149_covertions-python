@@ -1,0 +1,77 @@
+# program to make conerstions from one form to other
+
+# The following function converts decimal to binary
+
+
+def detobi(num1):
+    return bin(num1)
+
+
+# The following function converts decimal to octal
+
+def detooc(num1):
+    return oct(num1)
+
+
+# The following function converts decimal to hexadecimal.
+
+def detohd(num1):
+    return hex(num1)
+
+
+# The following function converts binary to decimal
+
+def bitode(num1):
+    return int(num1)
+
+
+# The following function converts hexadecimal to decimal
+
+def hdtode(num1):
+    return int(num1)
+
+
+# The following function converts Octal to decimal
+
+def octode(num1):
+    return int(num1)
+
+# Here prints the conversion we want to perform
+
+print("select conversion.")
+print("1.Decimal to Binary")
+print("2.Decimal to octal")
+print("3.Decimal to hexadecimal")
+print("4.Binary to Decimal")
+print("5.Hexadecimal to Decimal")
+print("6.Octal to Decimal")
+
+# Writing the cases
+
+while True:
+
+    # Take input from the user
+
+    choice = input("Enter choice(1/2/3/4/5/6): ")
+
+# check if choice is one of four options
+
+    if choice in('1', '2', '3', '4', '5', '6'):
+        num1 = int(input("Enter the number:"))
+
+# write the operations
+
+    if choice == '1':
+        print(num1, "=", detobi(num1))
+    elif choice == '2':
+        print(num1, "=", detooc(num1))
+    elif choice == '3':
+        print(num1, "=", detohd(num1))
+    elif choice == '4':
+        print(num1, "=", bitode(num1))
+    elif choice == '5':
+        print(num1, "=", hdtode(num1))
+    elif choice == '6':
+        print(num1, "=", octode(num1))
+    else:
+        print(" Invalid output ")
